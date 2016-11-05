@@ -10,7 +10,6 @@
 		2A99EC8E1DCDAA1C008F583E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A99EC8D1DCDAA1C008F583E /* main.m */; };
 		2A99EC911DCDAA1C008F583E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A99EC901DCDAA1C008F583E /* AppDelegate.m */; };
 		2A99EC941DCDAA1C008F583E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A99EC931DCDAA1C008F583E /* ViewController.m */; };
-		2A99EC971DCDAA1C008F583E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A99EC951DCDAA1C008F583E /* Main.storyboard */; };
 		2A99EC991DCDAA1C008F583E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A99EC981DCDAA1C008F583E /* Assets.xcassets */; };
 		2A99EC9C1DCDAA1C008F583E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A99EC9A1DCDAA1C008F583E /* LaunchScreen.storyboard */; };
 		2A99ECA71DCDAA1D008F583E /* BLEBackgroundTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A99ECA61DCDAA1D008F583E /* BLEBackgroundTestTests.m */; };
@@ -41,7 +40,6 @@
 		2A99EC901DCDAA1C008F583E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2A99EC921DCDAA1C008F583E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2A99EC931DCDAA1C008F583E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2A99EC961DCDAA1C008F583E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A99EC981DCDAA1C008F583E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A99EC9B1DCDAA1C008F583E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A99EC9D1DCDAA1C008F583E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 				2A99EC901DCDAA1C008F583E /* AppDelegate.m */,
 				2A99EC921DCDAA1C008F583E /* ViewController.h */,
 				2A99EC931DCDAA1C008F583E /* ViewController.m */,
-				2A99EC951DCDAA1C008F583E /* Main.storyboard */,
 				2A99EC981DCDAA1C008F583E /* Assets.xcassets */,
 				2A99EC9A1DCDAA1C008F583E /* LaunchScreen.storyboard */,
 				2A99EC9D1DCDAA1C008F583E /* Info.plist */,
@@ -245,7 +242,6 @@
 			files = (
 				2A99EC9C1DCDAA1C008F583E /* LaunchScreen.storyboard in Resources */,
 				2A99EC991DCDAA1C008F583E /* Assets.xcassets in Resources */,
-				2A99EC971DCDAA1C008F583E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +304,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2A99EC951DCDAA1C008F583E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A99EC961DCDAA1C008F583E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2A99EC9A1DCDAA1C008F583E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -414,8 +402,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BLEBackgroundTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bbigcd.BLEBackgroundTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chendi.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -425,8 +414,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BLEBackgroundTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bbigcd.BLEBackgroundTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chendi.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -496,6 +486,7 @@
 				2A99ECB81DCDAA1D008F583E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A99ECB91DCDAA1D008F583E /* Build configuration list for PBXNativeTarget "BLEBackgroundTestTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +495,7 @@
 				2A99ECBB1DCDAA1D008F583E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A99ECBC1DCDAA1D008F583E /* Build configuration list for PBXNativeTarget "BLEBackgroundTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +504,7 @@
 				2A99ECBE1DCDAA1D008F583E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
